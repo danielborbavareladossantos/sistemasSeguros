@@ -9,7 +9,8 @@ block content
         form(method='POST' action='/encript')
           div.form-group
             label(for='texto') Texto para encriptar:
-            input#name.form-control(type='text', placeholder='Alguma coisa' name='texto')
+            input#name.form-control(type='text', placeholder='Texto' name='texto')
+            input#name.form-control(type='text', placeholder='Chave' name='chave')
           button.btn.btn-primary(type='submit') Encripty
 
         br
@@ -18,7 +19,8 @@ block content
         form(method='POST' action='/decripty')
           div.form-group
             label(for='texto') Texto para descriptar:
-            input#name.form-control(type='text', placeholder='Alguma coisa' name='texto')
+            input#name.form-control(type='text', placeholder='Texto' name='texto')
+            input#name.form-control(type='text', placeholder='Chave' name='chave')
           button.btn.btn-primary(type='submit') Decripty
 
           h5="Resultado"
